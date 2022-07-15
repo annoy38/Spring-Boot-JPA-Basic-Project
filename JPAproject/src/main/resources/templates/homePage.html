@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home page</title>
+</head>
+<body>
+	<h1 th:text="${title}"></h1>
+	<h2>Enter you information</h2>
+	<form action="saveInfo" method="POST">
+		<h3>Enter you name: </h3>
+		<input type="text" name="cName"><br>
+		<h3>Enter you Address: </h3>
+		<input type="text" name="cAddress"><br>
+		<h3>Enter you Yearly income: </h3>
+		<input type="number" name="cIncome"><br>
+		<h3>Enter you Number: </h3>
+		<input type="text" name="cNumber"><br><br>
+		<button type="submit">Submit</button>
+	
+	</form>
+</body>
+</html>

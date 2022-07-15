@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Customer Info</title>
+</head>
+<body>
+	<h1 th:text="${title}"></h1>
+	<h2>Customer information</h2>
+	<h3 th:text="${customer.cId}"></h3>
+	<h3 th:text="${customer.cName}"></h3>
+	<h3 th:text="${customer.cAddress}"></h3>
+	<h3 th:text="${customer.cIncome}"></h3>
+	<h3 th:text="${customer.cNumber}"></h3>
+</body>
+</html>
